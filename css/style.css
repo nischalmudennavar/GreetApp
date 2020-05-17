@@ -1,0 +1,79 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+    color:rgb(255, 255, 255);
+    /* background-image: url('../images/morning.jpg'); */
+    background-position: center;
+    background-size: cover;
+    outline: none;
+    overflow: hidden;
+    
+    
+}
+
+.overlay{
+
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align:center;
+    background: rgba(0, 0, 0, 0.473);
+    
+
+}
+#time{
+    font-size: 7rem;
+    letter-spacing: 5px;
+}
+
+h1{
+    margin-bottom:3rem;
+    outline: none;;
+}
+
+h2{
+    margin-bottom:0.5rem;
+    opacity: 0.7;
+    outline: none;;
+}
+
+#quote{
+
+    transition:all 1s ease-in;
+    opacity: 1;
+    position: relative;
+    top:40px;
+}
+#author{
+
+    transition:all 1s ease-in;
+    opacity: 1;
+    position: relative;
+    top:40px;
+}
+
+@media(max-width:700px)
+{
+    #time{
+        font-size:4.5rem;
+        outline: none;;
+    }
+    #greeting{
+        font-size:2rem;
+        outline: none;;
+    }
+    #name{
+        font-size:2rem;
+    }
+}
