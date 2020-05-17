@@ -36,7 +36,7 @@ function setBGgreet()
     {
         //morning
         var body=document.getElementById('body')
-        var pic1= "url('morning.jpg')"
+        var pic1= "url('./morning.jpg')"
         body.style.backgroundImage =pic1;
         greeting.innerHTML="Good Morning";
 
@@ -45,14 +45,14 @@ function setBGgreet()
     {
         //afternoon
         var body=document.getElementById('body')
-    body.style.backgroundImage =" url('afternoon.jpg') ";
+    body.style.backgroundImage =" url('./afternoon.jpg') ";
 
         greeting.innerHTML="Good Afternoon";
     }
     else{
         //evenung
         var body=document.getElementById('body')
-      body.style.backgroundImage ="url('night.jpg')";
+      body.style.backgroundImage ="url('./night.jpg')";
         greeting.innerHTML="Good Evening ";
         
     }
