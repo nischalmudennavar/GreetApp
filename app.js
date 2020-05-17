@@ -35,20 +35,24 @@ function setBGgreet()
     if(hour < 12)
     {
         //morning
-
-        document.body.style.backgroundImage ="url('../images/morning.jpg')";
+        var body=document.getElementById('body')
+        var pic1= "url('morning.jpg')"
+        body.style.backgroundImage =pic1;
         greeting.innerHTML="Good Morning";
 
 
     }else if (hour<18)
     {
         //afternoon
-        document.body.style.backgroundImage =" url('../images/afternoon.jpg') ";
+        var body=document.getElementById('body')
+    body.style.backgroundImage =" url('afternoon.jpg') ";
+
         greeting.innerHTML="Good Afternoon";
     }
     else{
         //evenung
-        document.body.style.backgroundImage ="url('../images/night.jpg')";
+        var body=document.getElementById('body')
+      body.style.backgroundImage ="url('night.jpg')";
         greeting.innerHTML="Good Evening ";
         
     }
